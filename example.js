@@ -6,7 +6,8 @@ function print(value) {
 function q(selector) {
   return document.querySelector(selector)
 }
-
+//!!!!//!!!!!//!!!!!//!!!!!
+//with the response from the get request, call the function to render the todo list...  give it the response...  tell it what it is asking for  
 function getAllTodos() {
   return fetch('http://localhost:3000/notes/', {
     method: 'GET'
@@ -44,6 +45,8 @@ function postNewTodo(titleText, bodyText) {
     .then(response => response.json())
 }
 
+
+//!!!!//!!!!!//!!!!!//!!!!!
 // function renderTodosList(todos) {
 //   const todosHTML = createTodosHTML(todos)
 //   const todosSection = document.querySelector('#todos')
